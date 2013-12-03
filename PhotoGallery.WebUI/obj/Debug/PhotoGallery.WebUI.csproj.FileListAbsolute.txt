@@ -34,3 +34,15 @@ D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.Web
 D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.csprojResolveAssemblyReference.cache
 D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.dll
 D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.pdb
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI\bin\PhotoGallery.WebUI.dll
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI\bin\PhotoGallery.WebUI.pdb
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI\bin\EntityFramework.dll
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI\bin\Ninject.dll
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI\bin\PhotoGallery.Domain.dll
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI\bin\PhotoGallery.Domain.pdb
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI\bin\EntityFramework.xml
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI\bin\Ninject.pdb
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI\bin\Ninject.xml
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.dll
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.pdb

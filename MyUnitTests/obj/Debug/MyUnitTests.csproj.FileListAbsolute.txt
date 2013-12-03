@@ -1,0 +1,14 @@
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\MyUnitTests\bin\Debug\MyUnitTests.dll
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\MyUnitTests\bin\Debug\MyUnitTests.pdb
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\MyUnitTests\bin\Debug\EntityFramework.dll
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\MyUnitTests\bin\Debug\Ninject.dll
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\MyUnitTests\bin\Debug\PhotoGallery.Domain.dll
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\MyUnitTests\bin\Debug\PhotoGallery.WebUI.dll
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\MyUnitTests\bin\Debug\PhotoGallery.Domain.pdb
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\MyUnitTests\bin\Debug\PhotoGallery.WebUI.pdb
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\MyUnitTests\bin\Debug\EntityFramework.xml
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\MyUnitTests\bin\Debug\Ninject.pdb
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\MyUnitTests\bin\Debug\Ninject.xml
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\MyUnitTests\obj\Debug\MyUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\MyUnitTests\obj\Debug\MyUnitTests.dll
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\MyUnitTests\obj\Debug\MyUnitTests.pdb

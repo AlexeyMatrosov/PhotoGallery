@@ -12,3 +12,12 @@ D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.Domain\bin\Debug
 D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.Domain\bin\Debug\Ninject.pdb
 D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.Domain\bin\Debug\Ninject.xml
 D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.Domain\obj\Debug\PhotoGallery.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.Domain\bin\Debug\PhotoGallery.Domain.dll.config
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.Domain\bin\Debug\PhotoGallery.Domain.dll
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.Domain\bin\Debug\PhotoGallery.Domain.pdb
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.Domain\bin\Debug\Ninject.dll
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.Domain\bin\Debug\Ninject.pdb
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.Domain\bin\Debug\Ninject.xml
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.Domain\obj\Debug\PhotoGallery.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.Domain\obj\Debug\PhotoGallery.Domain.dll
+C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.Domain\obj\Debug\PhotoGallery.Domain.pdb

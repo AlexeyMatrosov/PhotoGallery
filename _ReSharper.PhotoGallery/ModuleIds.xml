@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="9836AC35-3D61-4EB0-ABDC-8D710EF05D69" ModuleId="PhotoGallery.WebUI" />
+  <Module PersistentId="4384A1C7-5230-4AFF-9BD2-600E6BE62386" ModuleId="PhotoGallery.Domain" />
+  <Module PersistentId="EDA898CE-9E51-4EB0-A716-1F5E938B7814" ModuleId="MyUnitTests" />
+</Modules>
