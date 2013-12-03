@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoGallery.WebUI", "PhotoGallery.WebUI\PhotoGallery.WebUI.csproj", "{9836AC35-3D61-4EB0-ABDC-8D710EF05D69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoGallery.Domain", "PhotoGallery.Domain\PhotoGallery.Domain.csproj", "{4384A1C7-5230-4AFF-9BD2-600E6BE62386}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9836AC35-3D61-4EB0-ABDC-8D710EF05D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9836AC35-3D61-4EB0-ABDC-8D710EF05D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9836AC35-3D61-4EB0-ABDC-8D710EF05D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9836AC35-3D61-4EB0-ABDC-8D710EF05D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4384A1C7-5230-4AFF-9BD2-600E6BE62386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4384A1C7-5230-4AFF-9BD2-600E6BE62386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4384A1C7-5230-4AFF-9BD2-600E6BE62386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4384A1C7-5230-4AFF-9BD2-600E6BE62386}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

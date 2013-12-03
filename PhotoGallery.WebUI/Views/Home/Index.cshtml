@@ -1,0 +1,64 @@
+﻿@model List<PhotoGallery.Domain.Entities.PhotoInfoModel>
+@{
+    ViewBag.Title = "Photo Gallery";
+}
+
+<style>
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 700px;
+    }
+    .carousel .item {
+      height: 400px;
+    }
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption h4 {
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+</style>
+
+
+<h2>This is home page!</h2>
+<div align="center">
+<div id="myCarousel" class="carousel slide">
+    <div  id="myInner" class="carousel-inner">
+    @{bool flag = true;
+    foreach (var el in Model)
+    {
+        <div align="center" class="@((flag)?"item active":"item")">
+            <img id="mainPhoto"  src="@Url.Action("GetImage", "Home", new { photo = el.Name })"/>
+            <div class="container">
+                <div class="carousel-caption">
+                    <h4 align="left">@el.Name.Substring(0, el.Name.IndexOf('\\'))</h4>
+                    <p class="lead" align="left"><i>@el.Description</i></p>
+                    <p class="lead" align="left">@el.UploadedDate</p>
+                </div>
+            </div>
+        </div>
+        flag = false;
+    }
+    }
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+</div>
+

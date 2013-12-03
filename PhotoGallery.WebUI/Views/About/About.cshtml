@@ -1,0 +1,20 @@
+﻿@model PhotoGallery.WebUI.Models.EMailModel
+           
+@{
+    ViewBag.Title = "About";
+}
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+<h2>About</h2>
+@using (Html.BeginForm()) {
+    <div>
+        <fieldset>
+            @Html.ValidationSummary(true)
+            @Html.EditorForModel()
+            <p>
+                <input class="btn btn-primary" type="submit" value="Sent" />
+            </p>
+        </fieldset>
+    </div>
+}

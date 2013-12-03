@@ -1,0 +1,16 @@
+﻿@model PhotoGallery.WebUI.Models.PhotoModel
+@{
+    ViewBag.Title = "New Photo";
+}
+
+<h2>New Photo</h2>
+
+@using (Html.BeginForm("LoadPhoto", "Gallery", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{  
+    <div>Name: @Html.EditorFor(x => x.Name)</div>
+    <div>
+        <input type="file" id="UploadPhoto" name="image" accept="image/*"/>
+    </div>
+    <div>Description: @Html.EditorFor(x => x.Description)</div>
+    <input type="submit" class="btn btn-primary" value="Upload" />    
+}

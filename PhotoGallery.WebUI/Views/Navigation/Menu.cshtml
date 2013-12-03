@@ -1,0 +1,24 @@
+﻿@model PhotoGallery.WebUI.Models.NavigationModel
+           
+<a class="brand" href="/Home/Index">
+    <strong>Photo Gallery</strong>
+</a>
+<div class="nav-collapse collapse">
+    <ul class="nav pull-left">
+        <li>
+            <a href="/Home/Index" class="@((string.Equals(@Model.category, "Home")) ? "active" : "")">Home</a>
+        </li>
+        @if(Model.IsAuthenticated)
+        {
+          <li>
+            <a href="/Gallery/Photos" class="@((string.Equals(@Model.category, "Gallery")) ? "active" : "")">Gallery</a>
+          </li>
+         }
+        <li>
+            <a href="/About/About"  class="@((string.Equals(@Model.category, "About")) ? "active" : "")">About</a>
+        </li>                                                           
+    </ul>
+
+    <ul class="nav pull-right"> @{Html.RenderPartial("UserInfo");}  </ul>
+</div>
+

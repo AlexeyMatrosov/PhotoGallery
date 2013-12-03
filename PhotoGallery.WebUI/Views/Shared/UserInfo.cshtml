@@ -1,0 +1,25 @@
+﻿@using PhotoGallery.Domain.Entities
+
+@{
+    UserInfoModel Model = (UserInfoModel)Session["UserInfo"];  
+if (Request.IsAuthenticated && Model != null)
+    {<text>Welcome, @Model.Name. Your status is @Model.Access. 
+    You uploaded @Model.Count photos.
+      [@Html.ActionLink("Log Off", "LogOff", "Account")]</text> 
+    }
+else
+{
+     <text><a role="button" class="btn btn-primary" id="btnLogOn" data-toggle="modal">Log On</a> or <a role="button" class="btn btn-primary" id="btnRegister" data-toggle="modal">Register</a></text>
+    }
+}
+
+
+<script>
+$('#btnLogOn').click(function () {
+        $('#UserInfo').load('/Account/LogOn');
+    });
+
+$('#btnRegister').click(function () {
+        $('#UserInfo').load('/Account/Register');
+    });
+</script>

@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PhotoGalleryModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="PhotoGalleryModelStoreContainer">
+          <EntitySet Name="Photos" EntityType="PhotoGalleryModel.Store.Photos" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Roles" EntityType="PhotoGalleryModel.Store.Roles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Uploads" EntityType="PhotoGalleryModel.Store.Uploads" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Users" EntityType="PhotoGalleryModel.Store.Users" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Uploads_Photos" Association="PhotoGalleryModel.Store.FK_Uploads_Photos">
+            <End Role="Photos" EntitySet="Photos" />
+            <End Role="Uploads" EntitySet="Uploads" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Uploads_Users" Association="PhotoGalleryModel.Store.FK_Uploads_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Uploads" EntitySet="Uploads" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Users_Roles" Association="PhotoGalleryModel.Store.FK_Users_Roles">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Photos">
+          <Key>
+            <PropertyRef Name="PhotoID" />
+          </Key>
+          <Property Name="PhotoID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="UploadDate" Type="datetime" Nullable="false" />
+          <Property Name="AmountRating" Type="decimal" Nullable="false" Precision="16" Scale="2" />
+          <Property Name="NumberRating" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Uploads">
+          <Key>
+            <PropertyRef Name="UploadID" />
+          </Key>
+          <Property Name="UploadID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="PhotoID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Access" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Uploads_Photos">
+          <End Role="Photos" Type="PhotoGalleryModel.Store.Photos" Multiplicity="1" />
+          <End Role="Uploads" Type="PhotoGalleryModel.Store.Uploads" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Photos">
+              <PropertyRef Name="PhotoID" />
+            </Principal>
+            <Dependent Role="Uploads">
+              <PropertyRef Name="PhotoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Uploads_Users">
+          <End Role="Users" Type="PhotoGalleryModel.Store.Users" Multiplicity="1" />
+          <End Role="Uploads" Type="PhotoGalleryModel.Store.Uploads" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Uploads">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Users_Roles">
+          <End Role="Roles" Type="PhotoGalleryModel.Store.Roles" Multiplicity="1" />
+          <End Role="Users" Type="PhotoGalleryModel.Store.Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="Access" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PhotoGallery.Domain" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="PhotoGalleryEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Photos" EntityType="PhotoGallery.Domain.Photo" />
+          <EntitySet Name="Roles" EntityType="PhotoGallery.Domain.Role" />
+          <EntitySet Name="Uploads" EntityType="PhotoGallery.Domain.Upload" />
+          <EntitySet Name="Users" EntityType="PhotoGallery.Domain.User" />
+          <AssociationSet Name="FK_Uploads_Photos" Association="PhotoGallery.Domain.FK_Uploads_Photos">
+            <End Role="Photos" EntitySet="Photos" />
+            <End Role="Uploads" EntitySet="Uploads" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Users_Roles" Association="PhotoGallery.Domain.FK_Users_Roles">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Uploads_Users" Association="PhotoGallery.Domain.FK_Uploads_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Uploads" EntitySet="Uploads" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Photo">
+          <Key>
+            <PropertyRef Name="PhotoID" />
+          </Key>
+          <Property Name="PhotoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="UploadDate" Type="DateTime" Nullable="false" />
+          <Property Name="AmountRating" Type="Decimal" Nullable="false" Precision="16" Scale="2" />
+          <Property Name="NumberRating" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Uploads" Relationship="PhotoGallery.Domain.FK_Uploads_Photos" FromRole="Photos" ToRole="Uploads" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Users" Relationship="PhotoGallery.Domain.FK_Users_Roles" FromRole="Roles" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Upload">
+          <Key>
+            <PropertyRef Name="UploadID" />
+          </Key>
+          <Property Name="UploadID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="PhotoID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Photos" Relationship="PhotoGallery.Domain.FK_Uploads_Photos" FromRole="Uploads" ToRole="Photos" />
+          <NavigationProperty Name="Users" Relationship="PhotoGallery.Domain.FK_Uploads_Users" FromRole="Uploads" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Access" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Roles" Relationship="PhotoGallery.Domain.FK_Users_Roles" FromRole="Users" ToRole="Roles" />
+          <NavigationProperty Name="Uploads" Relationship="PhotoGallery.Domain.FK_Uploads_Users" FromRole="Users" ToRole="Uploads" />
+        </EntityType>
+        <Association Name="FK_Uploads_Photos">
+          <End Role="Photos" Type="PhotoGallery.Domain.Photo" Multiplicity="1" />
+          <End Role="Uploads" Type="PhotoGallery.Domain.Upload" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Photos">
+              <PropertyRef Name="PhotoID" />
+            </Principal>
+            <Dependent Role="Uploads">
+              <PropertyRef Name="PhotoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Users_Roles">
+          <End Role="Roles" Type="PhotoGallery.Domain.Role" Multiplicity="1" />
+          <End Role="Users" Type="PhotoGallery.Domain.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="Access" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Uploads_Users">
+          <End Role="Users" Type="PhotoGallery.Domain.User" Multiplicity="1" />
+          <End Role="Uploads" Type="PhotoGallery.Domain.Upload" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Uploads">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PhotoGalleryModelStoreContainer" CdmEntityContainer="PhotoGalleryEntities">
+          <EntitySetMapping Name="Photos">
+            <EntityTypeMapping TypeName="PhotoGallery.Domain.Photo">
+              <MappingFragment StoreEntitySet="Photos">
+                <ScalarProperty Name="PhotoID" ColumnName="PhotoID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="UploadDate" ColumnName="UploadDate" />
+                <ScalarProperty Name="AmountRating" ColumnName="AmountRating" />
+                <ScalarProperty Name="NumberRating" ColumnName="NumberRating" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="PhotoGallery.Domain.Role">
+              <MappingFragment StoreEntitySet="Roles">
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Uploads">
+            <EntityTypeMapping TypeName="PhotoGallery.Domain.Upload">
+              <MappingFragment StoreEntitySet="Uploads">
+                <ScalarProperty Name="UploadID" ColumnName="UploadID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="PhotoID" ColumnName="PhotoID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="PhotoGallery.Domain.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Access" ColumnName="Access" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="DataModel">
+        <EntityTypeShape EntityType="PhotoGallery.Domain.Photo" Width="1.5" PointX="3" PointY="5" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhotoGallery.Domain.Role" Width="1.5" PointX="0.75" PointY="1.375" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhotoGallery.Domain.Upload" Width="1.5" PointX="5.25" PointY="1.125" Height="1.9802864583333326" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhotoGallery.Domain.User" Width="1.5" PointX="3" PointY="1" Height="2.3648893229166656" IsExpanded="true" />
+        <AssociationConnector Association="PhotoGallery.Domain.FK_Uploads_Photos" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="6.1824446614583337" />
+          <ConnectorPoint PointX="6" PointY="6.1824446614583337" />
+          <ConnectorPoint PointX="6" PointY="3.1052864583333326" />
+        </AssociationConnector>
+        <AssociationConnector Association="PhotoGallery.Domain.FK_Users_Roles" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.172841796875" />
+          <ConnectorPoint PointX="3" PointY="2.172841796875" />
+        </AssociationConnector>
+        <AssociationConnector Association="PhotoGallery.Domain.FK_Uploads_Users" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="2.1151432291666663" />
+          <ConnectorPoint PointX="5.25" PointY="2.1151432291666663" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

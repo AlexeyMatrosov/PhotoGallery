@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Photos";
+}
+
+<h2>Photos</h2>
+
+@Html.ActionLink("Load new photo", "LoadPhoto", "Gallery", new {@class = "btn btn-primary"})
+
+<div id="ShowSimple"></div>
+<div id="galleryLoadSimple">
+<table id="gallery" width="90%" align="center">
+    <tbody>
+        <tr></tr>
+    </tbody>
+</table>
+</div>
+<input type='button' class="btn btn-primary" id="btnLoadMore" value="Show more"/>
+
+<script src="@Url.Content("~/Scripts/MyJS.js")" type="text/javascript"></script>

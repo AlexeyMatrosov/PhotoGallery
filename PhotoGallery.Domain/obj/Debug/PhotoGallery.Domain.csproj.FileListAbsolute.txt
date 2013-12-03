@@ -1,0 +1,14 @@
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.Domain\bin\Debug\PhotoGallery.Domain.dll.config
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.Domain\bin\Debug\PhotoGallery.Domain.dll
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.Domain\bin\Debug\PhotoGallery.Domain.pdb
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.Domain\obj\Debug\PhotoGallery.Domain.dll
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.Domain\obj\Debug\PhotoGallery.Domain.pdb
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.Domain\bin\Debug\PhotoGallery.Domain.dll.config
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.Domain\bin\Debug\PhotoGallery.Domain.dll
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.Domain\bin\Debug\PhotoGallery.Domain.pdb
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.Domain\obj\Debug\PhotoGallery.Domain.dll
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.Domain\obj\Debug\PhotoGallery.Domain.pdb
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.Domain\bin\Debug\Ninject.dll
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.Domain\bin\Debug\Ninject.pdb
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.Domain\bin\Debug\Ninject.xml
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.Domain\obj\Debug\PhotoGallery.Domain.csprojResolveAssemblyReference.cache

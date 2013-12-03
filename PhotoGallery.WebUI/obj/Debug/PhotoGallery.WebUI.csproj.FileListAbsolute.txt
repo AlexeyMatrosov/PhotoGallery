@@ -1,0 +1,36 @@
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.WebUI\bin\PhotoGallery.WebUI.dll
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.WebUI\bin\PhotoGallery.WebUI.pdb
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.WebUI\bin\EntityFramework.dll
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.WebUI\bin\Ninject.dll
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.WebUI\bin\EntityFramework.xml
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.WebUI\bin\Ninject.pdb
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.WebUI\bin\Ninject.xml
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.dll
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.pdb
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.WebUI\bin\PhotoGallery.Domain.dll
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.WebUI\bin\PhotoGallery.Domain.pdb
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.csprojResolveAssemblyReference.cache
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.csprojResolveAssemblyReference.cache
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.dll
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\PhotoGallery.WebUI.dll
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\PhotoGallery.WebUI.pdb
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\EntityFramework.dll
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\Ninject.dll
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\PhotoGallery.Domain.dll
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\PhotoGallery.Domain.pdb
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\EntityFramework.xml
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\Ninject.pdb
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\Ninject.xml
+D:\Projects\Work\Chirkov\PhotoGallery (вн. бд)\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.pdb
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\PhotoGallery.WebUI.dll
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\PhotoGallery.WebUI.pdb
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\EntityFramework.dll
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\Ninject.dll
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\PhotoGallery.Domain.dll
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\PhotoGallery.Domain.pdb
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\EntityFramework.xml
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\Ninject.pdb
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\bin\Ninject.xml
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.csprojResolveAssemblyReference.cache
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.dll
+D:\Projects\Work\Chirkov\PhotoGallery\PhotoGallery (вн. бд)\PhotoGallery.WebUI\obj\Debug\PhotoGallery.WebUI.pdb
