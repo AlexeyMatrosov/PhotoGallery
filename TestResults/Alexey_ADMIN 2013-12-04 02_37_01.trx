@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f6a6e9b8-ca86-41bc-84d8-46f609c026fb" name="Alexey@ADMIN 2013-12-04 02:37:01" runUser="Admin\Alexey" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="02ef1364-e948-4dc4-ac85-9628323de803">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Alexey_ADMIN 2013-12-04 02_37_01">
+      <DeploymentItem filename="C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI\bin\PhotoGallery.WebUI.dll" />
+      <DeploymentItem filename="C:\Users\Alexey\Documents\GitHub\PhotoGallery\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll" />
+      <DeploymentItem filename="C:\Users\Alexey\Documents\GitHub\PhotoGallery\packages\Ninject.3.0.1.10\lib\net40\Ninject.dll" />
+      <DeploymentItem filename="C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.Domain\bin\Debug\PhotoGallery.Domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-12-04T02:37:01.9434861+02:00" queuing="2013-12-04T02:37:09.9924630+02:00" start="2013-12-04T02:37:10.6255760+02:00" finish="2013-12-04T02:37:18.3155431+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="IndexTest" storage="c:\users\alexey\documents\github\photogallery\myunittests\bin\debug\myunittests.dll" id="5a40f202-59ec-28c4-9c26-6472c226cb65">
+      <Execution id="c7b52202-f145-4811-b601-43a99d283e87" />
+      <TestMethod codeBase="C:/Users/Alexey/Documents/GitHub/PhotoGallery/MyUnitTests/bin/Debug/MyUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyUnitTests.HomeControllerTest, MyUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IndexTest" />
+      <AspNet webSiteUrl="http://localhost:28628/">
+        <Host pathToWebApp="C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5a40f202-59ec-28c4-9c26-6472c226cb65" executionId="c7b52202-f145-4811-b601-43a99d283e87" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c7b52202-f145-4811-b601-43a99d283e87" testId="5a40f202-59ec-28c4-9c26-6472c226cb65" testName="IndexTest" computerName="ADMIN" startTime="2013-12-04T02:37:11.2916608+02:00" endTime="2013-12-04T02:37:18.1125169+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c7b52202-f145-4811-b601-43a99d283e87">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:28628/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_IndexTest.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="ADMIN\WebRequestResponse_IndexTest.html" />
+      </ResultFiles>
+    </UnitTestResult>
+  </Results>
+</TestRun>

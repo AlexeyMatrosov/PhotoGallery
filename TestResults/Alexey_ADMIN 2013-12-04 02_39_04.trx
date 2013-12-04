@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8ebd55a5-e8cf-4fb2-bf4e-0591b75818f9" name="Alexey@ADMIN 2013-12-04 02:39:04" runUser="Admin\Alexey" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="02ef1364-e948-4dc4-ac85-9628323de803">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Alexey_ADMIN 2013-12-04 02_39_04">
+      <DeploymentItem filename="C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.WebUI\bin\PhotoGallery.WebUI.dll" />
+      <DeploymentItem filename="C:\Users\Alexey\Documents\GitHub\PhotoGallery\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll" />
+      <DeploymentItem filename="C:\Users\Alexey\Documents\GitHub\PhotoGallery\packages\Ninject.3.0.1.10\lib\net40\Ninject.dll" />
+      <DeploymentItem filename="C:\Users\Alexey\Documents\GitHub\PhotoGallery\PhotoGallery.Domain\bin\Debug\PhotoGallery.Domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-12-04T02:39:04.6748775+02:00" queuing="2013-12-04T02:39:06.8221823+02:00" start="2013-12-04T02:39:06.9701954+02:00" finish="2013-12-04T02:39:33.6635149+02:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="ADMIN" outcome="Error" timestamp="2013-12-04T02:39:33.6615156+02:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="IndexTest" storage="c:\users\alexey\documents\github\photogallery\myunittests\bin\debug\myunittests.dll" id="5a40f202-59ec-28c4-9c26-6472c226cb65">
+      <Execution id="9f11730a-bf3b-4726-ad4f-de582b6e1cfe" />
+      <TestMethod codeBase="C:/Users/Alexey/Documents/GitHub/PhotoGallery/MyUnitTests/bin/Debug/MyUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyUnitTests.HomeControllerTest, MyUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IndexTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5a40f202-59ec-28c4-9c26-6472c226cb65" executionId="9f11730a-bf3b-4726-ad4f-de582b6e1cfe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9f11730a-bf3b-4726-ad4f-de582b6e1cfe" testId="5a40f202-59ec-28c4-9c26-6472c226cb65" testName="IndexTest" computerName="ADMIN" duration="00:00:24.8041167" startTime="2013-12-04T02:39:08.8593982+02:00" endTime="2013-12-04T02:39:33.6635149+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f11730a-bf3b-4726-ad4f-de582b6e1cfe">
+    </UnitTestResult>
+  </Results>
+</TestRun>
