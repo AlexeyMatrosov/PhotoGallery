@@ -83,6 +83,7 @@ namespace MyUnitTests
             HomeController target = new HomeController(r); // TODO: Initialize to an appropriate value
             ActionResult expected = null; // TODO: Initialize to an appropriate value
             ActionResult actual;
+
             actual = target.Index();
             Assert.AreEqual(expected, actual);
             Assert.Inconclusive("Verify the correctness of this test method.");
